@@ -18,13 +18,13 @@ h2 {
   display: block;
   line-height: 1em;
   padding-bottom: 2em;
-  color: #fb667a;
+  color: #e74c3c;
 }
 
 h2 a {
   font-weight: 700;
   text-transform: uppercase;
-  color: #fb667a;
+  color: #e74c3c;
   text-decoration: none;
 }
 
@@ -82,7 +82,7 @@ h2 a {
 }
 
 .container td:first-child {
-  color: #fb667a;
+  color: #e74c3c;
 }
 
 .container tr:hover {

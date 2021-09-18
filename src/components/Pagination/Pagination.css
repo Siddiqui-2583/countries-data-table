@@ -12,7 +12,7 @@
     display: flex;
 }
 .round-effect{
-  color:#fb667a;
+  color:#e74c3c;
   cursor:pointer;
 /*   border:1px solid red; */
   
@@ -25,13 +25,13 @@
   height: 40px;
   width: 40px;
   margin:5px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  box-shadow: 0 3px 6px rgba(226, 226, 226, 0.16), 0 3px 6px rgba(0,0,0,0.23);
    text-decoration: none;
 }
 
 .round-effect:hover{
   text-decoration: none;
-  background:#DD4124;
+  background:#e74c3c;
   color:#FFF;
 }
 .round-effect:hover a {
@@ -40,10 +40,10 @@
 }
 
 .active{
-  background:#DD4124;
+  background:#e74c3c;
   color:#FFF;
 }
 a:link {
   text-decoration: none;
-  color:#DD4124;
+  color:#00B4CC;
 }
