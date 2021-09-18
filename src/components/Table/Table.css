@@ -18,16 +18,18 @@ h2 {
   display: block;
   line-height: 1em;
   padding-bottom: 2em;
-  color: #e74c3c;
+  color: #fb667a;
 }
 
 h2 a {
   font-weight: 700;
   text-transform: uppercase;
-  color: #e74c3c;
+  color: #fb667a;
   text-decoration: none;
 }
-
+.flag{
+  height:48px;
+}
 .blue {
   color: #185875;
 }
@@ -54,7 +56,7 @@ h2 a {
   width: 80%;
   margin: 0 auto;
   display: table;
-  padding: 0 0 8em 0;
+  padding: 0;
 }
 .container thead tr{
     border: 1px solid #fff;

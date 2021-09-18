@@ -2,29 +2,20 @@ import React from 'react';
 
 import Pagination from '../Pagination/Pagination'
 import './Table.css'
-const Table = ({ countries, setCountries }) => {
+const Table = ({ countries }) => {
+  const columns=["Name","Flag","Population","Region"]
   const [currentPage, setCurrentPage] = React.useState(1);
-
-  const flagStyle = {
-    height: "50px",
-  };
   return (
     <div>
       <table class="container">
         <thead>
           <tr>
-            <th>
-              <h1>Name</h1>
-            </th>
-            <th>
-              <h1>Flag</h1>
-            </th>
-            <th>
-              <h1>Population</h1>
-            </th>
-            <th>
-              <h1>Religion</h1>
-            </th>
+            {columns.map((column) => (
+              <th>
+                <h1>{column}</h1>
+              </th>
+            ))}
+            
           </tr>
         </thead>
         <tbody>
@@ -32,7 +23,7 @@ const Table = ({ countries, setCountries }) => {
             <tr>
               <td>{country.name}</td>
               <td>
-                <img style={flagStyle} src={country.flag} alt="" />
+                <img className="flag" src={country.flag} alt="" />
               </td>
               <td>{country.population}</td>
               <td>{country.region}</td>
@@ -40,13 +31,14 @@ const Table = ({ countries, setCountries }) => {
           ))}
         </tbody>
       </table>
+      <br />
       <Pagination
         currentPage={currentPage}
         setCurrentPage={setCurrentPage}
         maxPages={countries.length}
       />
       <br />
-      <br />
+    
     </div>
   );
 };
